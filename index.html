@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>24Webteam</title>
+  <meta name="description" content="24Webチームは早稲田祭の「顔」である公式サイトを作っているチームです。そんなWebチームの日常を除いていきませんか～～！" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Zen+Maru+Gothic&display=swap" rel="stylesheet"> 
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
+/>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1 class="header-logo">24Web</h1>
+        <div class="nav-btn">
+            <li class="nav-btn-link"><a href="index.html">top</a></li>
+            <li class="nav-btn-link"><a href="#" >about us</a></li>
+            <li class="nav-btn-link"><a href="#">memories</a></li>
+            <li class="nav-btn-link"><a href="#">sns</a></li>
+        </div>
+    </header>
+    <!-- Hero -->
+    <div class="hero-container">
+        <div class="hero-bun">
+            <p>24 Web team</p>
+            <P class="smaller">ここから祭を</P>
+        </div>
+        <img src="./img/webteam-hero.jpg">
+    </div>
+    <!-- Pickup -->
+    <div class="pikaboo">Pick up</div>
+    <div class="pickup-container">
+        <div class="aboutus-container">
+            <a href="aboutus.html">
+                <img src="./img/aboutus.jpg" class="pickup-img">
+                <div class=info-oya>
+                    <p class="title">About us</p>
+                    <p class="info">私たちは早稲田祭の「顔」である公式サイトを作るチームです。</br>公式サイトのほかに新歓サイトや仮サイトの政策もになっています。</br>既存6人、新規6人の少数精鋭ゆるゆるチームです。
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="memories-container">
+            <a href="memories.html">
+                <img src="./img/memories.jpg" class="pickup-img">
+                <div class="info-oya">
+                    <p class="title">Memories</p>
+                    <p class="info">私たちの日常をお届けします。</br>やる気が出るか、いいことがあり次第随時更新します。</br>ちょくちょくチェックしてみるといいこあるかも、、、。カモ、、、。
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+    </div>
+    <!-- Members -->
+    <div class="members-container">
+        <div class="member">
+            <img>
+            <div class="info"></div>
+        </div>
+    </div>
+    <footer>©24Web</footer>
+<style>
+    body{
+        color: #30343A;
+        background-color: #ECECE7;
+        font-family: 'Zen Kaku Gothic New';
+    }
+    /* Header */
+    header{
+        background-color: #024C72;
+        color: #FAF508;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+    .header-logo{
+        margin: auto 0;
+        padding-left: 30px;
+    }
+    .nav-btn{
+        display: flex;
+        flex-direction: row;
+        padding-right: 30px;
+    }
+    li{
+        list-style: none;
+        margin: auto 10px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    li > a{
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        transition: all .3s ease 0s;
+        position: relative;
+    }
+    li > a::after{
+        position: absolute;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 4px;
+        background: #FAF508;
+        bottom: -25px;
+        visibility: hidden;
+    }
+    li > a:hover{
+        cursor: pointer;
+        color: #FAF508;
+    }
+    li > a:hover::after{
+        visibility: visible;
+    }
+    /* Hero */
+    .hero-container{
+        margin-top: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #fff;
+        color: #024C72;
+        font-weight: bold;
+        padding: 10px;
+        font-size: 50px;
+    }
+    .hero-container > img{
+        display: block;
+        text-align: center;
+        width: 70%;
+        opacity: 0.9;
+        text-align: right;
+    }
+    .hero-bun{
+        margin-top: 30px;
+        padding-left: 30px;
+    }
+    .smaller{
+        font-size: 30px;
+    }
+    /* Pickup */
+    .pikaboo{
+        font-weight: bold;
+        font-size: 30px;
+        color: #024C72;
+        margin: 70px;
+        text-align: center;
+    }
+    .pickup-container{
+        padding: 0 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .aboutus-container , .memories-container{
+        position: relative;
+        text-align: center;
+    }
+    .pickup-img{
+        padding: 0 10px;
+        width: 100%;
+        opacity: 0.14;
+    }
+    .info-oya{
+        width: 70%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .title{
+        font-weight: 900;
+        color: #024C72;
+        font-size: 20px;
+        display: block;
+        padding-bottom: 10px;
+    }
+    .info{
+        font-weight: 500;
+        display: inline-block;
+        text-align: left;
+    }
+    a{
+        display: inline-block;
+        text-decoration: none;
+        color: #30343A;
+        transition: all .5s ease-in-out 0s;
+    }
+    a >:hover{
+        opacity: 0.4;
+    }
+    /* Members */
+    
+    /* Footer */
+    footer{
+        background-color: #024C72;
+        color: #fff; 
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+    }
+    @media screen and (max-width:767px){
+        /* Header */
+        header{
+            padding: 0 20px;
+            height: 60px;
+        }
+        .header-logo{
+            font-size: 20px;
+            padding-left: 0;
+        }
+        .nav-btn{
+            padding-right: 0;
+        }
+        li{
+            font-size: 14px;
+            margin: auto 5px;
+        }
+        li > a::after{
+        height: 3px;
+        bottom: -20px;
+        }
+        /* Hero */
+        .hero-container{
+            margin-top: 60px;
+        }
+        .hero-container > img{
+            height: 100%;
+        }
+        .hero-bun{
+            margin-top: 10px;
+            padding-left: 10px;
+            font-size: 15px;
+        }
+        .smaller{
+            margin-top: 7px;
+            font-size: 13px;
+        }
+        /* Pickup */
+        .pikaboo{
+            font-size: 20px;
+            margin: 10px;
+            padding-top: 20px;
+        }
+        .pickup-container{
+            flex-direction: column;
+            align-items: center;
+        }
+        .aboutus-container , .memories-container{
+            width: 80%;
+            margin: 10px;
+        }
+        .title{
+            font-size: 15px;
+        }
+        .info{
+            font-size: 10px;
+        }
+        /* Footer */
+        footer{
+            font-size: 15px;
+            height: 40px;
+        }
+    }
+</style>
+</body>
+</html>
