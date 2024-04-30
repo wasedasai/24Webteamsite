@@ -34,7 +34,7 @@
         <img src="./img/webteam-hero.jpg">
     </div>
     <!-- Pickup -->
-    <div class="pikaboo">Pick up</div>
+    <div class="pikaboo">Pick up</br><span>私たちの活動、のぞいてみない？</span></div>
     <div class="pickup-container">
         <div class="aboutus-container">
             <a href="aboutus.html">
@@ -59,6 +59,7 @@
     </div>
     </div>
     <!-- Members -->
+    <div class="pikaboo">Members</br><span>個性豊かな既存６人です</span></div>
     <div class="members-container">
         <div class="member">
             <img>
@@ -70,7 +71,7 @@
     body{
         color: #30343A;
         background-color: #ECECE7;
-        font-family: 'Zen Kaku Gothic New';
+        font-family: "Zen Kaku Gothic New", sans-serif;
     }
     /* Header */
     header{
@@ -143,6 +144,7 @@
         width: 70%;
         opacity: 0.9;
         text-align: right;
+        padding-left: 10px;
     }
     .hero-bun{
         margin-top: 30px;
@@ -156,8 +158,11 @@
         font-weight: bold;
         font-size: 30px;
         color: #024C72;
-        margin: 70px;
+        margin: 70px 70px 30px 70px;
         text-align: center;
+    }
+    span{
+        font-size: 15px;
     }
     .pickup-container{
         padding: 0 10px;
@@ -256,6 +261,9 @@
             font-size: 20px;
             margin: 10px;
             padding-top: 20px;
+        }
+        span{
+        font-size: 10px;
         }
         .pickup-container{
             flex-direction: column;
