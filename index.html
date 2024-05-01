@@ -46,7 +46,7 @@
                 </div>
             </a>
         </div>
-        <div class="memories-container">
+        <div class="aboutus-container">
             <a href="memories.html">
                 <img src="./img/memories.jpg" class="pickup-img">
                 <div class="info-oya">
@@ -62,8 +62,52 @@
     <div class="pikaboo">Members</br><span>個性豊かな既存６人です</span></div>
     <div class="members-container">
         <div class="member">
-            <img>
-            <div class="info"></div>
+            <img src="./img/kisara.jpg" class="member-img">
+            <p class="name">yu sato</p>
+            <div class="pro">
+                <a href="#"><p>profile</p></a>
+                <a href="#"><p>portfolio</p></a>
+            </div>
+        </div>
+        <div class="member">
+            <img src="./img/moeko.jpg" class="member-img">
+            <p class="name">moeko tomita</p>
+            <div class="pro">
+                <a href="#"><p>profile</p></a>
+                <a href="#"><p>portfolio</p></a>
+            </div>
+        </div>
+        <div class="member">
+            <img src="./img/kisara.jpg" class="member-img">
+            <p class="name">kisara ito</p>
+            <div class="pro">
+                <a href="#"><p>profile</p></a>
+                <a href="#"><p>portfolio</p></a>
+            </div>
+        </div>
+        <div class="member">
+            <img src="./img/kisara.jpg" class="member-img">
+            <p class="name">akira inaba</p>
+            <div class="pro">
+                <a href="#"><p>profile</p></a>
+                <a href="#"><p>portfolio</p></a>
+            </div>
+        </div>
+        <div class="member">
+            <img src="./img/kisara.jpg" class="member-img">
+            <p class="name">sakura matsumura</p>
+            <div class="pro">
+                <a href="#"><p>profile</p></a>
+                <a href="#"><p>portfolio</p></a>
+            </div>
+        </div>
+        <div class="member">
+            <img src="./img/yagami.jpg" class="member-img">
+            <p class="name">takeshi yagami</p>
+            <div class="pro">
+                <a href="#"><p>profile</p></a>
+                <a href="#"><p>portfolio</p></a>
+            </div>
         </div>
     </div>
     <footer>©24Web</footer>
@@ -94,16 +138,16 @@
     .nav-btn{
         display: flex;
         flex-direction: row;
+        align-items: center;
         padding-right: 30px;
     }
     li{
         list-style: none;
-        margin: auto 10px;
+        margin: 0 10px;
         font-weight: bold;
         font-size: 20px;
     }
     li > a{
-        display: inline-block;
         text-decoration: none;
         color: #fff;
         transition: all .3s ease 0s;
@@ -170,7 +214,7 @@
         flex-direction: row;
         justify-content: space-between;
     }
-    .aboutus-container , .memories-container{
+    .aboutus-container{
         position: relative;
         text-align: center;
     }
@@ -198,17 +242,52 @@
         display: inline-block;
         text-align: left;
     }
-    a{
+    .aboutus-container > a{
         display: inline-block;
         text-decoration: none;
         color: #30343A;
         transition: all .5s ease-in-out 0s;
     }
-    a >:hover{
+    .aboutus-container > a >:hover{
         opacity: 0.4;
     }
     /* Members */
-    
+    .members-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .member{
+        width: calc(80% / 3);
+        margin: 25px;
+    }
+    .name{
+        font-weight: bold;
+        color: #024C72;
+        text-align: center;
+    }
+    .pro{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .pro > a{
+        display: inline-block;
+        text-decoration: none;
+        color: #30343A;
+        transition: .2s;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        padding: 0 10px;
+    }
+    .pro > a:hover{
+        color: #024C72;
+        font-weight: bold;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
     /* Footer */
     footer{
         background-color: #024C72;
@@ -218,6 +297,7 @@
         align-items: center;
         justify-content: center;
         height: 60px;
+        width: 100%;
     }
     @media screen and (max-width:767px){
         /* Header */
@@ -234,7 +314,7 @@
         }
         li{
             font-size: 14px;
-            margin: auto 5px;
+            margin: 0 5px;
         }
         li > a::after{
         height: 3px;
@@ -269,7 +349,7 @@
             flex-direction: column;
             align-items: center;
         }
-        .aboutus-container , .memories-container{
+        .aboutus-container{
             width: 80%;
             margin: 10px;
         }
@@ -278,6 +358,11 @@
         }
         .info{
             font-size: 10px;
+        }
+        /* Members */
+        .member{
+            width: calc(80% / 2);
+            margin: 10px;
         }
         /* Footer */
         footer{
