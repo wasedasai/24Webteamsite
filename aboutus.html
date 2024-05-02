@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>24Webteam</title>
+  <meta name="description" content="24Webチームは早稲田祭の「顔」である公式サイトを作っているチームです。そんなWebチームの日常を除いていきませんか～～！" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Zen+Maru+Gothic&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css"/>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1 class="header-logo">24Web</h1>
+    <div class="nav-btn">
+        <li class="nav-btn-link"><a href="index.html">top</a></li>
+        <li class="nav-btn-link"><a href="aboutus.html" >about us</a></li>
+        <li class="nav-btn-link"><a href="memories.html">memories</a></li>
+        <li class="nav-btn-link"><a href="https://www.instagram.com/24__web?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">sns</a></li>
+    </div>
+  </header>
+  <!-- Hero -->
+  <div class="hero-container">
+    <div class="hero-bun">
+        <p>About us</p>
+        <P class="smaller">Webチームとは</P>
+    </div>
+    <img src="./img/webteam-hero.jpg">
+  </div>
+  <!-- About -->
+  <div class="container">
+    <div class="pikaboo">What we do</br><span>Webチームって何してるの～？</span></div>
+    <div class="setumei">
+      <p class="setumei-bun">Webチームはその名の通り、早稲田祭公式サイトの制作を担当しているチームです。”早稲田祭”と調べると一番上に出てくるのはこの公式サイトであるし！早稲田祭に関するすべての情報が掲載されているので！<span>早稲田祭の顔</span>といっても過言ではありません。みなさんがもしかしたら見てくれたであろう新歓サイトもWebチームが制作を担当しています。</p>
+      <p class="setumei-bun"><span>最強の”広報”媒体</span>をみんなで作り上げていくのはとても楽しいです。「早稲田祭公式Webサイト」の制作を最終目標に、私たちと一緒に運スタライフを送りませんか～～！Webチームで待っています！</p>
+    </div>
+  </div>
+  <!-- Schedule -->
+  <div class="container">
+    <div class="pikaboo">Schedule</br><span>Webチームの1年</span></div>
+    <div class="setumei">
+      <p class="setumei-bun">私たちの年間の忙しさはだいたいこんな感じです～！</p>
+      <p class="setumei-bun">公式サイト<span>10月</span>公開を目標に、サイトデザインやらコーディングやらで<span>8月あたり</span>から忙しくなってきます～！</p>
+      <img src="./img/graph.png">
+    </div>
+  </div>
+  <!-- Portfolio -->
+  <div class="container">
+    <div class="pikaboo">portfolio</br><span>Webチームの制作物</span></div>
+    <div class="setumei">
+      <p class="setumei-bun">24既存が制作にかかわったサイトたちです～！新歓サイトは24既存だけで制作した初めてのサイト。</p>
+      <p class="setumei-bun"><span>ロゴ</span>をクリックしてぜひ見てみてね～～！</p>
+    </div>
+    <div class="logo">
+      <a href="https://wasedasai.net/"><img src="./img/yume.png"></a>
+      <a href="https://wasedasai.github.io/2024-Shinkan/"><img src="./img/kodou.png"></a>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer>©24Web</footer>
+<style>
+  /* About */
+  .container{
+    margin: 30px 0;
+  }
+  .setumei{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .setumei-bun{
+    font-size: 16px;
+  }
+  .setumei-bun > span{
+    color: #024C72;
+    border-bottom: #FAF508 1px solid;
+  }
+  /* Schedule */
+  .setumei > img{
+    margin-top: 70px;
+    margin-bottom: 40px;
+    width: 60%;
+  }
+  /* Portfolio */
+  .logo{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .logo > a{
+    transition: .3s;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    width: calc(40% / 2);
+    margin: 10px;
+  }
+  .logo > a:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  @media screen and (max-width:767px){
+    /* About */
+    .setumei{
+      text-align: left;
+    }
+    .setumei-bun{
+      font-size: 14px;
+    }
+    .setumei-bun > span{
+      font-size: 14px;
+    }
+    /* Schedule */
+    .setumei > img{
+      margin-top: 60px;
+      margin-bottom: 0;
+      width: 100%;
+    }
+    /* Portfolio */
+    .logo{
+      margin-top: 15px;
+    }
+    .logo > a{
+      width: calc(85% / 2);
+      margin: 5px;
+    }
+  }
+</style>
+</body>
+</html>

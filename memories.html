@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>24Webteam</title>
+  <meta name="description" content="24Webチームは早稲田祭の「顔」である公式サイトを作っているチームです。そんなWebチームの日常を除いていきませんか～～！" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Zen+Maru+Gothic&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css"/>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1 class="header-logo">24Web</h1>
+    <div class="nav-btn">
+        <li class="nav-btn-link"><a href="index.html">top</a></li>
+        <li class="nav-btn-link"><a href="aboutus.html" >about us</a></li>
+        <li class="nav-btn-link"><a href="memories.html">memories</a></li>
+        <li class="nav-btn-link"><a href="https://www.instagram.com/24__web?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">sns</a></li>
+    </div>
+  </header>
+  <!-- Hero -->
+  <div class="hero-container">
+    <div class="hero-bun">
+        <p>Memories</p>
+        <P class="smaller">Webチームの懐古</P>
+    </div>
+    <img src="./img/webteam-hero.jpg">
+  </div>
+  <!-- Memories -->
+  <div class="omoide-container">
+    <div class="omoide">
+      <div class="date">あ</div>
+      <img src="./img/moeko.jpg" class="omoide-img">
+      <p class="nikki">チーム解散式</p>
+    </div>
+    <div class="omoide">
+      <div class="date">2/22</div>
+      <img src="./img/moeko.jpg" class="omoide-img">
+      <p class="nikki">今日も今日とて新歓サイトについて詰めたね涙。今日は全体冬合宿だったけどいなばは合宿の帰りのバスから直でチーミに参加してくれた（タフすぎ）りんたろさんとSPのFのあきひとさんが夜ごはんにマックを買ってくれましたおいしかったですありがとうございます～～♡</p>
+    </div>
+    <div class="omoide">
+      <div class="date">あ</div>
+      <img src="./img/moeko.jpg" class="omoide-img">
+      <p class="nikki">でぃずに</p>
+    </div>
+    <div class="omoide">
+      <div class="date">3/25</div>
+      <img src="./img/moeko.jpg" class="omoide-img">
+      <p class="nikki">2月からずっと頑張ってきた新歓サイトの公開日でした～～～！公開する直前も公開した直後もぎゃーぎゃー言いながらチーム員で協力してなんとか乗り切ったよう、、、、。公開できるかマジのマジで不安だったけど公開できてよかった、、、、、（切実）みんなに褒められてにこにこ＾＾</p>
+    </div>
+    <div class="omoide">
+      <div class="date">4/18</div>
+      <img src="./img/moeko.jpg" class="omoide-img">
+      <p class="nikki">今日は盛沢山の日だった～～！りんたろさんとぷみさんがチーミに来てくれたり、新規のみんなの初めての全ミで流れる運スタコレクションの動画をとったり、チームインスタの投稿案や投稿用の写真撮ったり、、、、。みんなでゆるゆるたくさんおしゃべりしちゃったね～～～。映像チームは運スタコレクションお疲れ様どす！</p>
+    </div>
+    <div class="omoide">
+      <div class="date">4/25</div>
+      <img src="./img/moeko.jpg" class="omoide-img">
+      <p class="nikki">4/27はわれらがぱっぱを務めてくれているいなばのお誕生日なので先取りで誕生日会@チーミをしたよ～～～！4月生まれだからやっぱりからだはでかいね（ニコニコ）cafeGOTOのケーキとジェラピケのお洋服喜んでくれてうれしかった～～～！良い1年にしてね。</p>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer>©24Web</footer>
+<style>
+  /* Memories */
+  .omoide-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .omoide{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 20px 50px 30px 50px;
+    margin: 30px;
+    width: calc(80% / 2);
+  }
+  .date{
+    position: absolute;
+    top: 5%;
+    left: -3%;
+    font-weight: bold;
+    font-size: 20px;
+    color: #024C72;
+    background-color: #FAF508;
+    padding: 10px 30px;
+    border-radius: 10px;
+  }
+  .omoide-img{
+    display: block;
+    width: 100%;
+  }
+  .nikki{
+    padding-top: 20px;
+    font-size: 16px;
+    text-align: left;
+  }
+  @media screen and (max-width:767px){
+    .omoide-container{
+      flex-direction: column;
+      align-items: center;
+    }
+    .omoide{
+      border-radius: 20px;
+      width: 75%;
+      padding: 13px 30px 30px 30px ;
+    }
+    .date{
+      font-size: 16px;
+      padding: 6px 16px;
+      border-radius: 6px;
+    }
+    .nikki{
+      padding-top: 24px;
+      font-size: 14px;
+    }
+  } 
+</style>
+</body>
+</html>
