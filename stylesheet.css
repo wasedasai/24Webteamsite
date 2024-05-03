@@ -183,6 +183,23 @@ span{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
+/* SNS */
+.insuta > a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #30343A;
+    font-weight: bold;
+    font-size: 30px;
+    transition: .3s;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.insuta > a:hover{
+    color: #720202;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
 /* Footer */
 footer{
     margin-top: 80px;
@@ -273,6 +290,10 @@ footer{
     }
     .name{
         font-size: 15px;
+    }
+    /* SNS */
+    .insuta > a{
+        font-size: 25px;
     }
     /* Footer */
     footer{
